@@ -4,7 +4,7 @@ const router = new Router();
 
 router.get('/images', (request, response, next) => {
   Image
-  .findAll()
+    .findAll()
     .then(pics => response.send(pics))
     .catch(next)
 })
